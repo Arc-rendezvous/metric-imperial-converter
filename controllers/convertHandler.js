@@ -86,7 +86,7 @@ function ConvertHandler() {
       result = initNum / lbsToKg;
     } else if (initUnit === 'gal') {
       result = initNum * galToL;
-    } else if (initUnit === 'L') {
+    } else if (initUnit === 'l') {
       result = initNum / galToL;
     }
     
@@ -96,7 +96,7 @@ function ConvertHandler() {
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
     var result;
     
-    result = initNum + ' ' + this.spellOutUnit(initUnit) + ' converts to ' + returnNum + this.spellOutUnit(returnUnit);
+    result = initNum + ' ' + this.spellOutUnit(initUnit) + ' converts to ' + returnNum + ' ' + this.spellOutUnit(returnUnit);
     
     return result;
   };
